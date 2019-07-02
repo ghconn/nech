@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\tpc\tpc.csproj" />
-    <ProjectReference Include="..\mdl\mdl.csproj" />
   </ItemGroup>
 
 </Project>

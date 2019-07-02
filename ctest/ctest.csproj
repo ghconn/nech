@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\mdl\mdl.csproj" />
     <ProjectReference Include="..\tpc\tpc.csproj" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.6.0-preview6.19303.8" />
   </ItemGroup>
