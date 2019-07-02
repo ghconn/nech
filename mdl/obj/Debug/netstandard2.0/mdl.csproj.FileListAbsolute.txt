@@ -1,0 +1,9 @@
+C:\Users\cspactera\source\repos\vscode\mich\mdl\bin\Debug\netstandard2.0\mdl.deps.json
+C:\Users\cspactera\source\repos\vscode\mich\mdl\bin\Debug\netstandard2.0\mdl.dll
+C:\Users\cspactera\source\repos\vscode\mich\mdl\bin\Debug\netstandard2.0\mdl.pdb
+C:\Users\cspactera\source\repos\vscode\mich\mdl\obj\Debug\netstandard2.0\mdl.csprojAssemblyReference.cache
+C:\Users\cspactera\source\repos\vscode\mich\mdl\obj\Debug\netstandard2.0\mdl.csproj.CoreCompileInputs.cache
+C:\Users\cspactera\source\repos\vscode\mich\mdl\obj\Debug\netstandard2.0\mdl.AssemblyInfoInputs.cache
+C:\Users\cspactera\source\repos\vscode\mich\mdl\obj\Debug\netstandard2.0\mdl.AssemblyInfo.cs
+C:\Users\cspactera\source\repos\vscode\mich\mdl\obj\Debug\netstandard2.0\mdl.dll
+C:\Users\cspactera\source\repos\vscode\mich\mdl\obj\Debug\netstandard2.0\mdl.pdb
