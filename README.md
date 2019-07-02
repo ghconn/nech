@@ -1,2 +1,0 @@
-# nech
-code snippet
