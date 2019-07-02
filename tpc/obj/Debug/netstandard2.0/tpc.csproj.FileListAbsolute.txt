@@ -1,9 +1,0 @@
-C:\Users\cspactera\source\repos\vscode\mich\tpc\bin\Debug\netstandard2.0\tpc.deps.json
-C:\Users\cspactera\source\repos\vscode\mich\tpc\bin\Debug\netstandard2.0\tpc.dll
-C:\Users\cspactera\source\repos\vscode\mich\tpc\bin\Debug\netstandard2.0\tpc.pdb
-C:\Users\cspactera\source\repos\vscode\mich\tpc\obj\Debug\netstandard2.0\tpc.csprojAssemblyReference.cache
-C:\Users\cspactera\source\repos\vscode\mich\tpc\obj\Debug\netstandard2.0\tpc.csproj.CoreCompileInputs.cache
-C:\Users\cspactera\source\repos\vscode\mich\tpc\obj\Debug\netstandard2.0\tpc.AssemblyInfoInputs.cache
-C:\Users\cspactera\source\repos\vscode\mich\tpc\obj\Debug\netstandard2.0\tpc.AssemblyInfo.cs
-C:\Users\cspactera\source\repos\vscode\mich\tpc\obj\Debug\netstandard2.0\tpc.dll
-C:\Users\cspactera\source\repos\vscode\mich\tpc\obj\Debug\netstandard2.0\tpc.pdb
