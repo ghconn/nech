@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Chloe;
+using Chloe.SqlServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,8 +33,15 @@ namespace mvcapp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            var connString = Configuration.GetConnectionString("mssql");
+            services.AddTransient<IDbContext>((serviceprovider) => 
+            {
+                var context = new MsSqlContext(new DefaultDbConnectionFactory(connString));
+                context.PagingMode = PagingMode.OFFSET_FETCH;
+                return context;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
