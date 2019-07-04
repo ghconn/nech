@@ -7,21 +7,25 @@ using Chloe;
 using common.mdl;
 using Microsoft.AspNetCore.Mvc;
 using mvcapp.Models;
+using Microsoft.Extensions.Logging;
 
 namespace mvcapp.Controllers
 {
     public class HomeController : Controller
     {
         IDbContext _sqlcontext;
-        public HomeController(IDbContext sqlcontext)
+
+        ILogger<HomeController> _logger;
+        public HomeController(IDbContext sqlcontext, ILogger<HomeController> logger)
         {
             _sqlcontext = sqlcontext;
+            _logger = logger;
         }
 
         public IActionResult Index()
         {
-            var rule = _sqlcontext.Query<tRuleDefine>().First();
-            ViewBag.city = rule?.rCity;
+            var city = _sqlcontext.Query<tRuleDefine>().Select(r => r.rCity).First();
+            ViewBag.city = city;
             return View();
         }
 

@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NLog;
 
 namespace mvcapp
 {
@@ -35,13 +36,14 @@ namespace mvcapp
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            var connString = Configuration.GetConnectionString("mssql");
+            var connectionString = Configuration.GetConnectionString("mssql");
             services.AddTransient<IDbContext>((serviceprovider) => 
             {
-                var context = new MsSqlContext(new DefaultDbConnectionFactory(connString));
+                var context = new MsSqlContext(new DefaultDbConnectionFactory(connectionString));
                 context.PagingMode = PagingMode.OFFSET_FETCH;
                 return context;
             });
+            LogManager.Configuration.Variables["connectionString"] = connectionString;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
