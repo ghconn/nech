@@ -9,7 +9,7 @@ namespace ctest
         static void Main(string[] args)
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            LetMeKK("鍘熷瀷/涓撳淇℃伅绠＄悊");
+            LetMeKK("鍘熷瀷/涓撳淇℃伅绠＄悊1");
             Console.Read();
         }
 
