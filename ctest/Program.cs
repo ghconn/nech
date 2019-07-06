@@ -13,14 +13,14 @@ namespace ctest
             Console.Read();
         }
 
-        static void LetMeKK(string s)
+        static void LetMeKK(string mixstr)
         {
             Encoding[] encodings = new Encoding[] { Encoding.Default, Encoding.UTF32, Encoding.UTF7, Encoding.UTF8, Encoding.Unicode, Encoding.GetEncoding("gb2312") };
             foreach (var encoding in encodings)
             {
                 foreach (var encoding2 in encodings)
                 {
-                    Console.WriteLine(encoding.EncodingName + " get bytes, " + encoding2.EncodingName + " GetString\n" + encoding2.GetString(encoding.GetBytes(s)));
+                    Console.WriteLine(encoding.EncodingName + " get bytes, " + encoding2.EncodingName + " GetString\n" + encoding2.GetString(encoding.GetBytes(mixstr)));
                 }
                 Console.WriteLine();
             }
