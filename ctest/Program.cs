@@ -18,7 +18,6 @@ namespace ctest
         static void Main(string[] args)
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-<<<<<<< HEAD
             
             new HostBuilder().ConfigureAppConfiguration((context, builder) => 
             {
@@ -28,9 +27,6 @@ namespace ctest
             .Build();
 
             SqlServerTableDefineToHTML();
-=======
-            LetMeKK("鍘熷瀷/涓撳淇℃伅绠＄悊1");
->>>>>>> dd17acbdcf8e1b61533e23cd4a94e88d7df5a984
             Console.Read();
         }
 
