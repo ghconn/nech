@@ -14,8 +14,8 @@ namespace mvcapp.Controllers
     public class HomeController : Controller
     {
         IDbContext _sqlcontext;
-
         ILogger<HomeController> _logger;
+        
         public HomeController(IDbContext sqlcontext, ILogger<HomeController> logger)
         {
             _sqlcontext = sqlcontext;

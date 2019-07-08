@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace mdl
+namespace common
 {
     public class Class1
     {
