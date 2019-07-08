@@ -18,6 +18,7 @@ namespace ctest
         static void Main(string[] args)
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+<<<<<<< HEAD
             
             new HostBuilder().ConfigureAppConfiguration((context, builder) => 
             {
@@ -27,17 +28,20 @@ namespace ctest
             .Build();
 
             SqlServerTableDefineToHTML();
+=======
+            LetMeKK("鍘熷瀷/涓撳淇℃伅绠＄悊1");
+>>>>>>> dd17acbdcf8e1b61533e23cd4a94e88d7df5a984
             Console.Read();
         }
 
-        static void LetMeKK(string s)
+        static void LetMeKK(string mixstr)
         {
             Encoding[] encodings = new Encoding[] { Encoding.Default, Encoding.UTF32, Encoding.UTF7, Encoding.UTF8, Encoding.Unicode, Encoding.GetEncoding("gb2312") };
             foreach (var encoding in encodings)
             {
                 foreach (var encoding2 in encodings)
                 {
-                    Console.WriteLine(encoding.EncodingName + " get bytes, " + encoding2.EncodingName + " GetString\n" + encoding2.GetString(encoding.GetBytes(s)));
+                    Console.WriteLine(encoding.EncodingName + " get bytes, " + encoding2.EncodingName + " GetString\n" + encoding2.GetString(encoding.GetBytes(mixstr)));
                 }
                 Console.WriteLine();
             }
