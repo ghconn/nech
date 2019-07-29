@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.111" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.111" />
+    <PackageReference Include="Chloe.SQLite" Version="3.9.0" />
     <PackageReference Include="Chloe.SqlServer" Version="3.9.0" />
   </ItemGroup>
 
